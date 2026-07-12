@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Navbar</title>
+  <style>
+    /* Reset default margins */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar container */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #222;
+      color: #fff;
+    }
+
+    /* Logo styling */
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    /* Navigation items */
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc00;
+    }
+
+    /* Hire Me button */
+    .hire-btn {
+      padding: 8px 16px;
+      background-color: #ffcc00;
+      color: #222;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .hire-btn:hover {
+      background-color: #e6b800;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <!-- Left column: Logo -->
+    <a href="#" class="logo">MyPortfolio</a>
+
+    <!-- Right column: Nav items + button -->
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="hire-btn">Hire Me</button>
+    </div>
+  </nav>
+
+</body>
+</html>
