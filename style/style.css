@@ -1,10 +1,17 @@
-/* *{ 
+/* reset style */
+
+*{ 
     padding: 0;
     margin: 0;
     font-family: "Open Sans", sans-serif;
     
 }
 
+img{
+    max-width: 100% ;
+}
+
+/*common style*/
 .common-btn{ 
     background-color: #FD6E0A;
     padding: 6px 10px;
@@ -13,16 +20,34 @@
     font-size: 22 px;
     color: white;
     border: none;
+    cursor:pointer ;
+}
+
+.outline-btn{ 
+    background-color:white ;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 22 px;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
+    cursor:pointer ;
 
 }
 
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
 
+.hero-parent-root{
+    background-color: aliceblue;
+}
 nav{
   
     display: flex;
     justify-content:space-between ;
-    max-width: 1200px;
-    margin: auto;
+    
     padding: 12px 0;
 
 }
@@ -46,4 +71,211 @@ ul{
 
 ul li a { 
     text-decoration: none;
-} */
+}
+
+/* hero section style */
+.hero-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero-left h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+
+.hero-left-p1{ 
+    font-size: 20px;
+    font-weight: 600 ;
+
+}
+
+.hero-left-btn-margin{ 
+    margin-top: 7px;
+}
+
+
+/* about section introduce */
+.about-info{
+  
+    margin:70px auto;
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center; 
+
+}
+
+.about-info p{
+    margin: 10px 0;
+}
+
+.about-4box { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    background-color: rgb(82, 130, 172);
+    padding: 9px;
+    border-radius: 10px;
+}
+
+/* what i do para */
+.what-para{
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+.what{
+
+    padding: 10px;
+    text-align: center;
+  
+
+}
+
+.what-box{ 
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    gap: 8px;
+}
+
+
+.what-box-in {
+    border: 1px solid rgb(142, 119, 30);
+    padding: 8px;
+    text-align: left;
+
+}
+
+.what-box-in p{
+    color: #757575;
+    font-size: 15px;
+
+}
+
+.what-box-in h2{
+    margin: 10px 0;
+
+}
+
+/* A summary of my resume */
+
+.resume{ 
+    background-color: rgb(111, 118, 118);
+    text-align: center;
+    margin: 50px auto;
+
+}
+
+.edu-exp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.download-cv{
+    margin-top: 20px;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(112, 43, 43);
+    border-bottom: #757575;
+    cursor:pointer 
+    
+}
+
+.my-amazing-parent{
+    text-align: center;
+}
+
+.gallery { 
+    margin-top: 12px;
+    gap: 10px ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    grid-template-areas: 
+ " one two three"
+ " four two six"
+ " four five six";
+
+
+
+}
+
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-1{ grid-area: one;
+
+}
+
+.box-2{ grid-area: two;
+
+}
+
+.box-3{ grid-area: three;
+
+}
+
+.box-4{ grid-area: four;
+
+}
+
+.box-5{ grid-area: five;
+
+}
+
+.box-6{ grid-area: six;
+
+}
+
+
+
+footer{
+
+    text-align: center;
+    margin-top: 50px !important;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    gap: 30px;
+    background-color: bisque;
+    padding: 20px;
+
+
+}
+
+footer form input{ 
+    border: none;
+     outline: none;
+     background-color: white;
+     padding: 8px 15px;
+     display: block;
+     margin-bottom: 10px;
+     width:100%;
+     border-radius: 8px;
+}
+footer form textarea{
+     border: none;
+     outline: none;
+     background-color: white;
+     padding: 8px 15px;
+     display: block;
+     margin-bottom: 10px;
+     width:100%;
+      border-radius: 8px;
+}
+
+.footer-icon{
+    font-size: 5rem;
+}
